@@ -1,0 +1,238 @@
+html,
+body {
+    scroll-padding-top: 8rem;
+    /*this allows the page to occur under the header instead of behind it when using the navigation bar*/
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.5em 0 0.5em;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.2em;
+}
+
+hr {
+    margin: 0 7rem;
+}
+
+p {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    line-height: 1.6em;
+    font-style: normal;
+    font-weight: 400;
+    color: #747474;
+    margin: 0 0 1.25em;
+}
+
+section {
+    margin: 8rem 7rem;
+    height: 100%;
+}
+
+/* NAVBAR */
+.header_area {
+    line-height: 48px;
+}
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 3rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Navbar Link change when clicked */
+.active-link {
+    color: var(--primary-color);
+}
+
+/* Header change */
+.change-color {
+    box-shadow: 0 0 50px #ccc;
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 999;
+    transition: 0.35s ease;
+}
+
+/* BANNER SECTION */
+
+/* line design */
+.site-main .banner-section .site-title h3::after {
+    content: " ";
+    height: 2px;
+    width: 20vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .banner-section .site-title h1 {
+    font-size: 5rem;
+}
+
+.site-main .banner-section .banner-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    margin-top: 35px;
+}
+
+/* End BANNER */
+
+/* INTRODUCTION */
+
+.site-main .about-section .about-image > img {
+    padding: 1rem 0;
+}
+
+/* End INTRODUCTION */
+
+/* SKILLS */
+
+.site-main .skills-section .first-row .col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.site-main .skills-section .first-row .col > .skill {
+    /* border: 1px solid var(--border-color); */
+    text-align: center;
+}
+
+.site-main .skills-section .first-row .col > .skillS_icon:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .skills-section .first-row .col > .skill:hover > img {
+    filter: brightness(0.15);
+}
+
+/* END SKILLS */
+
+/* BLOG */
+
+.site-main .services-area {
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.services-area .services {
+    background: #f8fcfd;
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem 0.5rem;
+    transition: transform 0.4s ease;
+}
+
+.services-area .services:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+/* End Blog Area */
+
+/* Project Area */
+
+.site-main .project-section .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    transition: all 0.25s;
+}
+
+.github-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.source-code {
+    color: var(--primary-color);
+}
+
+/* End Project Area */
+
+/* Footer Area */
+
+footer {
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+footer .social a > i {
+    margin: 0 0.5rem;
+    padding: 2rem;
+    color: var(--border-color);
+    background-color: #f1f1f1;
+    color: #0c111a;
+    opacity: 0.8;
+    border-radius: 30%;
+    box-shadow: 0px 5px 15px -5px #00000070;
+    transition: all 0.25s;
+    padding: 9px;
+    margin-bottom: 1.5rem;
+}
+
+footer .social a:hover > i {
+    color: var(--primary-color);
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #f8fcfd;
+}
+
+/* End Footer */
+
+/* CSS Variables */
+
+:root {
+    --primary-color: #89aab9;
+    --primary-color2: #747474;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
